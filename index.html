@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d631347562.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <h1 class="logo">Portfo<span>lio.</span></h1>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Shailendra</span><br>
+                    Mahadule</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- //about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./asset/passport photo.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>HI..!! There i am Shailendra Mahadule
+                        I am computer greek, I am a Self-motivated person & Eager to learn different things and also I can adapt quickly any Environment.
+                        
+                    </p>
+
+                    <div class="tab-titles">
+
+
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>HTML<br>CSS<br>JAVASCRIPT<br>REACT</li>
+                            <li><span>Android Developement</span> <br>Flutter Framework</li>
+                            <li><span>Programming</span><br> C++ <br> Python </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Android Internship/Tranning </span><br>Assum Inovation Nagpur <br>2021</li>
+
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Gujarati National High school Gondia </span><br>SSC <br>2019</li>
+                            <li><span>Government Polytechnic Nagpur</span> <br>Diploma in Information Technology
+                                <br>2019 - 2022
+                            </li>
+                            <li><span>Walchand college of Engineering Sangli</span> <br>Pursing B.TECH in Information Technology
+                                 <br> 3rd year<br>2022*
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>Programming is the process of creating and instructing computers through code. It involves designing, writing, testing, and maintaining instructions that enable machines to perform specific tasks, making technology and software applications functional and responsive to user needs.<p>
+                    <a href="#">Learn more..</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developer</h2>
+                    <p>An application developer is a professional who designs, creates, deploys and updates programs for a particular device, the web or a specific operating system. Developers typically specialize in one area of development, such as mobile phone applications</p>
+                    <a href="#">Learn more..</a>
+
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React developer</h2>
+                    <p>A React developer designs and creates JavaScript-based applications for web or mobile environments. They typically specialize in front-end development. React is an open-source JavaScript library</p>
+                    <a href="#">Learn more..</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./asset/work-1.png" alt="work">
+                    <div class="layer">
+                        <h3>Mess Management</h3>
+                        <p>The Application is made using Dart language and Flutter Framework in Android Studio which can be run on both android as well as IOS devices</p>
+                        <a href="https://github.com/Shailendra-08/Mess-Deployment"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./asset/work-2.png" alt="work">
+                    <div class="layer">
+                        <h3>Food-Delivery Website</h3>
+                        <p>The Food-Delivery website is made using the React while learning and to clear various concepts of react it is developed.</p>
+                        <a href="https://github.com/Shailendra-08/Food-Delivery"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./asset/work-3.png" alt="work">
+                    <div class="layer">
+                        <h3>E-commerce website</h3>
+                        <p>An E-commerce Website is made using React, Bootstrap, javascript for backend Node and express is used and for the Database we use the MOngoDB database and firebase for google authentication service. </p>
+                        <a href="https://github.com/Shailendra-08/E-commerce"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>smahadule08@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>+91 9307071723</p>
+                    <div class="social-icon">
+
+                        <a href="https://www.instagram.com/shailendra_mahadule/"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="https://twitter.com/Shailen64591797"><i class="fa-brands fa-twitter"></i></a>
+
+                        <a href="https://www.linkedin.com/in/shailendra-mahadule-96955b200"><i class="fa-brands fa-linkedin"></i></a>
+
+                        <a href="https://github.com/Shailendra-08"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <a href="../portfolio/asset/resume_01.pdf" download class="btn btn2">Download CV</a>
+
+
+                </div>
+
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+
+                        <input type="text" id="name" name="Name " placeholder="Your Name" required>
+                        <input type="email" id="email" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>copyright @ Developer. Made by Shailendra Mahadule</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- javascript -->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        emailjs.init("4T4StcfYAUVjqdma4");
+        function sendEmail() {
+          emailjs.send("service_tat7tv1", "template_wk7o7ka", {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+          })
+          .then(function(response) {
+            alert("Email sent successfully:");
+          }, function(error) {
+            alert("Email failed to send:");
+          });
+        }
+      </script>
+
+
+  
+
+  
+
+
+</body>
+
+</html>
